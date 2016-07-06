@@ -5,7 +5,12 @@ export default class MarkdownInput extends Component {
     return (
       <form>
         <div className='form-group'>
-          <textarea onChange={this.props.onUserInput} className='form-control' rows="20" autofocus></textarea>
+          <textarea 
+            onChange={this.props.onUserInput} 
+            className='form-control' 
+            rows="20" 
+            placeholder="Enter markdown text here">
+          </textarea>
         </div>
       </form>    
     );
